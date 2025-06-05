@@ -1,0 +1,11 @@
+name: First workflow
+on: workflow_dispatch
+jobs: 
+  build: 
+    runs_on: ubuntu-latest
+    steps:
+    -uses: actions/checkout@v4
+    -name: run one line scripsts
+     run: echo "hello world"
+    
+ 
