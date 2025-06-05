@@ -4,8 +4,7 @@ jobs:
   build: 
     runs_on: ubuntu-latest
     steps:
-    -uses: actions/checkout@v4
-    -name: run one line scripsts
-     run: echo "hello world"
+      - name: run one line scripsts
+        run: echo "hello world"
     
  
