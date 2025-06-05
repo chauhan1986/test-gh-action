@@ -7,4 +7,3 @@ jobs:
       - name: run one line scripsts
         run: echo "hello world"
     
- 
