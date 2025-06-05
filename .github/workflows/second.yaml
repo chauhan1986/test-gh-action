@@ -1,17 +1,16 @@
-name: truefan
+name: test github action file
 on:
   push:
     branches:
-      - 'main'
-      - 'test'
+      - main
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest  
     steps:
       - uses: actions/checkout@v4
-      - name: job1
-        run: echo "hello job1"   
-      - name: multiline
-        run: |
-          echo "hello"
-          echo "hi"     
+      - name: install node
+        uses: ations/setup-node@v4
+        with:
+          node-version: 18
+      - run: npm ci
+      - run: npm test
