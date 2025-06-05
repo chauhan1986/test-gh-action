@@ -10,4 +10,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: job1
-        run: echo "hello job1"        
+        run: echo "hello job1"   
+      - name: multiline
+        run: |
+        echo "hello"
+        echo "hi"     
